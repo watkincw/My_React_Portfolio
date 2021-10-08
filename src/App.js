@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-// import Nav from './components/common/Nav';
-import Header from './components/common/Header';
+import Nav from './components/common/Nav';
+// import Header from './components/common/Header';
 import AboutMe from './components/About';
 import Footer from './components/common/Footer';
 import ContactForm from './components/Contact';
@@ -21,13 +21,14 @@ function App() {
 
 	return (
 		<div className="App">
-			<Header
-				categories={ categories }
-				setCurrentCategory={ setCurrentCategory }
-				currentCategory={ currentCategory }
-				contactSelected={ contactSelected }
-				setContactSelected={ setContactSelected }
-			></Header>
+            {/* <Header></Header> */}
+            <Nav
+                categories={ categories }
+                setCurrentCategory={ setCurrentCategory }
+                currentCategory={ currentCategory }
+                contactSelected={ contactSelected }
+                setContactSelected={ setContactSelected }
+            ></Nav>
 			<main>
                 <div>
                     { !contactSelected ? (

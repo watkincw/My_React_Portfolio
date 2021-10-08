@@ -45,5 +45,7 @@ function ProjectList() {
                 )) }
             </div>
         </div>
-    )
+    );
 }
+
+export default ProjectList;
