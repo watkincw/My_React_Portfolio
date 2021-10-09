@@ -1,53 +1,62 @@
 import React from "react";
+import {
+    CListGroup,
+    CListGroupItem
+} from '@coreui/react';
 
 function Resume() {
     return (
         <section>
             <h1>Resume Page</h1>
             <a href="./ColtonW_Resume.docx" download>Download my resume!</a>
-            {/* <a href="src/components/Resume/ColtonW_Resume.docx" download>Download my resume!</a> */}
             <h3>Proficiencies</h3>
-                <li>
-                    Finding the answers, wherever they might be! But, more specifically:
-                </li>
+                <CListGroup>
+                    <CListGroupItem>
+                        Finding the answers, wherever they might be! But, more specifically:
+                    </CListGroupItem>
+                </CListGroup>
             <h4>Frontend:</h4>
-                <li>
-                    HTML5
-                </li>
-                <li>
-                    JavaScript
-                </li>
-                <li>
-                    jQuery
-                </li>
-                <li>
-                    Bootstrap/Materialize
-                </li>
-                <li>
-                    AJAX
-                </li>
-                <li>
-                    SASS
-                </li>
+                <CListGroup>
+                    <CListGroupItem>
+                        HTML5
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        JavaScript
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        jQuery
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        Bootstrap/MateriaCListGroupItemze
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        AJAX
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        SASS
+                    </CListGroupItem>
+                </CListGroup>
             <h4>Backend:</h4>
-                <li>
-                    SQL, MySQL, NoSQL
-                </li>
-                <li>
-                    MongoDB
-                </li>
-                <li>
-                    Express
-                </li>
-                <li>
-                    ReactJS
-                </li>
-                <li>
-                    Node
-                </li>
-                <li>
-                    Webpack
-                </li>
+                <CListGroup>
+                    <CListGroupItem>
+                        SQL, MySQL, NoSQL
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        MongoDB
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        Express
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        ReactJS
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        Node
+                    </CListGroupItem>
+                    <CListGroupItem>
+                        Webpack
+                    </CListGroupItem>
+                </CListGroup>
         </section>
     );
 }

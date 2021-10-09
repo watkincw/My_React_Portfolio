@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+import { 
+    CHeader,
+    CContainer, 
+    CHeaderBrand, 
+    CHeaderToggler,
+    CCollapse,
+} from '@coreui/react';
 
 function Header() {
+    const [visible, setVisible] = useState(false);
     return (
-        <header className="flex-row px-1">
-            <h2>
-                <a href="/">CWW</a>
-            </h2>
-        </header>
+        <>
+            <CHeader>
+                <CContainer fluid>
+                    <CHeaderBrand href="/">CWW</CHeaderBrand>
+                    <CHeaderToggler onClick={() => setVisible(!visible)} />
+                    <CCollapse className="header-collapse" visible={visible}>
+                    </CCollapse>
+                </CContainer>
+            </CHeader>
+        </>
     );
 }
 

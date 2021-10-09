@@ -1,27 +1,39 @@
 import React from "react";
 import Header from '../Header';
+// Styles
+import {
+    CNavItem,
+    CHeaderNav,
+    CNavLink
+} from '@coreui/react';
 
 function Nav() {
 
     return (
         <div>
             <Header></Header>
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                        <a href="/">About Me</a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="/contact">Contact Me</a>
-                    </li>
-                    <li className="mx-2">
-                        <a href="/resume">Resume</a>
-                    </li>
-                </ul>
-            </nav>
+            <CHeaderNav>
+                <CNavItem>
+                    <CNavLink href="/" active>
+                        About Me
+                    </CNavLink>
+                </CNavItem>
+                <CNavItem>
+                    <CNavLink href="/portfolio" active>
+                        Portfolio
+                    </CNavLink>
+                </CNavItem>
+                <CNavItem>
+                    <CNavLink href="/contact" active>
+                        Contact Me
+                    </CNavLink>
+                </CNavItem>
+                <CNavItem>
+                    <CNavLink href="/resume" active>
+                        Resume
+                    </CNavLink>
+                </CNavItem>
+            </CHeaderNav>
         </div>
     );
 }

@@ -1,17 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 import Nav from "./components/common/Nav";
 import AboutMe from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from './components/Resume';
 import Footer from "./components/common/Footer";
+// Styles
+
 
 function App() {
 
     return (
-        <div className="App">
+        <div>
             <Router>
                 <Nav></Nav>
                 <main>
@@ -33,11 +35,11 @@ function App() {
                                 exact path="/resume"
                                 component={ Resume }
                             ></Route>
-                            {/* <Route
+                            <Route
                                 // no "EXACT path" because this will link you to the home page when the user tries to direct to a URL that doesnt exist
                                 path="/"
                                 component={ AboutMe }
-                            ></Route> */}
+                            ></Route>
                         </Switch>
                     </div>
                 </main>
@@ -48,11 +50,3 @@ function App() {
 }
 
 export default App;
-
-// {/* { !contactSelected ? (
-//     <>
-//         <AboutMe currentCategory={ currentCategory }></AboutMe>
-//     </>
-// ) : (
-//     <ContactForm></ContactForm>
-// ) } */}
