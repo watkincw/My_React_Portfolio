@@ -1,22 +1,7 @@
 import React from "react";
 import Header from '../Header';
-import { capitalizeFirstLetter } from '../../../utils/helpers';
 
-function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory,
-        contactSelected,
-        setContactSelected
-    } = props;
-
-    // useEffect(() => {
-    //     console.log(currentCategory);
-    //     console.log(categories); // Loot at the object in the console that these are displaying
-    //     console.log(categories[0]); // What is currentCategory.name?
-    //     // document.title = capitalizeFirstLetter(currentCategory.name);
-    // }, [currentCategory]);
+function Nav() {
 
     return (
         <div>
@@ -24,27 +9,17 @@ function Nav(props) {
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about" onClick={ () => setContactSelected(false) }>About Me</a>
+                        <a href="/">About Me</a>
                     </li>
-                    <li className={ `mx-2 ${contactSelected && 'nacActive'} `}>
-                        <span onClick={() => setContactSelected(true) }>Contact</span>
+                    <li className="mx-2">
+                        <a href="/portfolio">Portfolio</a>
                     </li>
-                    {categories.map((category) => (
-                        <li
-                            className={ `mx-1 ${
-                                currentCategory.name === category.name && !contactSelected && 'navActive'
-                                }`}
-                            key={ category.name }
-                        >
-                            <span onClick={ () => { 
-                                    setCurrentCategory(category.name);
-                                    setContactSelected(false);
-                                } }
-                            > 
-                                { capitalizeFirstLetter(category.name) }
-                            </span>
-                        </li>
-                    )) }
+                    <li className="mx-2">
+                        <a href="/contact">Contact Me</a>
+                    </li>
+                    <li className="mx-2">
+                        <a href="/resume">Resume</a>
+                    </li>
                 </ul>
             </nav>
         </div>

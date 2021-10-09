@@ -1,10 +1,11 @@
 import React from "react";
-import ProjectList from '../Project';
+import Projects from '../Projects';
 
-function Portfolio({ currentCategory }) {
+function Portfolio() {
     return (
         <section>
-            <ProjectList category={ currentCategory.name } />
+            <h1>Portfolio Page</h1>
+            <Projects />
         </section>
     );
 }

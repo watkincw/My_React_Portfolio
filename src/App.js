@@ -1,48 +1,58 @@
-import React, { useState } from 'react';
-import './App.css';
-import Nav from './components/common/Nav';
-// import Header from './components/common/Header';
-import AboutMe from './components/About';
-import Footer from './components/common/Footer';
-import ContactForm from './components/Contact';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import Nav from "./components/common/Nav";
+import AboutMe from "./components/About";
+import Portfolio from "./components/Portfolio";
+import ContactForm from "./components/Contact";
+import Resume from './components/Resume';
+import Footer from "./components/common/Footer";
 
 function App() {
 
-	const [categories] = useState([
-        { name: 'about me', description: 'A little about me!' },
-        { name: 'portfolio', description: 'Some of my work' },
-        { name: 'contact', description: 'Contact me!' },
-        { name: 'resume', description: 'My Resume' }
-    ]);
-
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
-    const [contactSelected, setContactSelected] = useState(false);
-
-
-	return (
-		<div className="App">
-            {/* <Header></Header> */}
-            <Nav
-                categories={ categories }
-                setCurrentCategory={ setCurrentCategory }
-                currentCategory={ currentCategory }
-                contactSelected={ contactSelected }
-                setContactSelected={ setContactSelected }
-            ></Nav>
-			<main>
-                <div>
-                    { !contactSelected ? (
-                        <>
-                            <AboutMe currentCategory={ currentCategory }></AboutMe>
-                        </>
-                    ) : (
-                        <ContactForm></ContactForm>
-                    ) }
-                </div>
-            </main>
-			<Footer />
+    return (
+        <div className="App">
+            <Router>
+                <Nav></Nav>
+                <main>
+                    <div>
+                        <Switch>
+                            <Route
+                                exact path="/"
+                                component={ AboutMe }
+                            ></Route>
+                            <Route
+                                exact path="/portfolio"
+                                component={ Portfolio }
+                            ></Route>
+                            <Route
+                                exact path="/contact"
+                                component={ ContactForm }
+                            ></Route>
+                            <Route
+                                exact path="/resume"
+                                component={ Resume }
+                            ></Route>
+                            {/* <Route
+                                // no "EXACT path" because this will link you to the home page when the user tries to direct to a URL that doesnt exist
+                                path="/"
+                                component={ AboutMe }
+                            ></Route> */}
+                        </Switch>
+                    </div>
+                </main>
+                <Footer />
+            </Router>
         </div>
-	);
+    );
 }
 
 export default App;
+
+// {/* { !contactSelected ? (
+//     <>
+//         <AboutMe currentCategory={ currentCategory }></AboutMe>
+//     </>
+// ) : (
+//     <ContactForm></ContactForm>
+// ) } */}
