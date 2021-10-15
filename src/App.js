@@ -19,24 +19,24 @@ function App() {
                 <div>
                     <Switch>
                         <Route
-                            exact path="/"
+                            exact path="/My_React_Portfolio/"
                             component={ AboutMe }
                         ></Route>
                         <Route
-                            exact path="/portfolio"
+                            exact path="/My_React_Portfolio/portfolio"
                             component={ Portfolio }
                         ></Route>
                         <Route
-                            exact path="/contact"
+                            exact path="/My_React_Portfolio/contact"
                             component={ ContactForm }
                         ></Route>
                         <Route
-                            exact path="/resume"
+                            exact path="/My_React_Portfolio/resume"
                             component={ Resume }
                         ></Route>
                         <Route
                             // no "EXACT path" because this will link you to the home page when the user tries to direct to a URL that doesnt exist
-                            path="/"
+                            path="/My_React_Portfolio/"
                             component={ AboutMe }
                         ></Route>
                     </Switch>
