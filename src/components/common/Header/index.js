@@ -10,16 +10,15 @@ import {
 function Header() {
     const [visible, setVisible] = useState(false);
     return (
-        <>
+        <div className="my-logo">
             <CHeader>
                 <CContainer fluid>
                     <CHeaderBrand href="/">CWW</CHeaderBrand>
                     <CHeaderToggler onClick={() => setVisible(!visible)} />
-                    <CCollapse className="header-collapse" visible={visible}>
-                    </CCollapse>
+                    <CCollapse visible={visible} />
                 </CContainer>
             </CHeader>
-        </>
+        </div>
     );
 }
 

@@ -46,17 +46,17 @@ function ContactForm() {
 
     return (
         <CForm id="contact-form" onSubmit={ handleSubmit }>
-            <h1>Contact Me</h1>
+            <h1 className="section-title contact-title">Contact Me</h1>
             <div className="mb-3">
-                <CFormLabel htmlFor="name">Name: </CFormLabel>
+                <CFormLabel className="contact-inputs" htmlFor="name">Name: </CFormLabel>
                 <CFormInput type="text" name="name" defaultValue={ name } onBlur={ handleChange } />
             </div>
             <div className="mb-3">
-                <CFormLabel htmlFor="email">Email Address: </CFormLabel>
+                <CFormLabel className="contact-inputs" htmlFor="email">Email Address: </CFormLabel>
                 <CFormInput type="email" name="email" defaultValue={ email } onBlur={ handleChange } />
             </div>
             <div className="mb-3">
-                <CFormLabel htmlFor="message">Message: </CFormLabel>
+                <CFormLabel className="contact-inputs" htmlFor="message">Message: </CFormLabel>
                 <CFormTextarea name="message" rows="5" defaultValue={ message } onBlur={ handleChange } />
             </div>
             { errorMessage && (
@@ -66,27 +66,29 @@ function ContactForm() {
             ) }
             <CButton color="success">Submit</CButton>
         </CForm>
-            // <form id="contact-form" onSubmit={ handleSubmit }>
-            //     <div>
-            //         <label htmlFor="name">Name: </label>
-            //         <input type="text" name="name" defaultValue={ name } onBlur={ handleChange } />
-            //     </div>
-            //     <div>
-            //         <label htmlFor="email">Email Address: </label>
-            //         <input type="email" name="email" defaultValue={ email } onBlur={ handleChange } />
-            //     </div>
-            //     <div>
-            //         <label htmlFor="message">Message: </label>
-            //         <textarea name="message" rows="5" defaultValue={ message } onBlur={ handleChange } />
-            //     </div>
-            //     { errorMessage && (
-            //         <div>
-            //             <p className=" error-text">{ errorMessage }</p>
-            //         </div>
-            //     ) }
-            //     <button type="submit">submit</button>
-            // </form>
+
     );
 }
 
 export default ContactForm;
+
+// <form id="contact-form" onSubmit={ handleSubmit }>
+//     <div>
+//         <label htmlFor="name">Name: </label>
+//         <input type="text" name="name" defaultValue={ name } onBlur={ handleChange } />
+//     </div>
+//     <div>
+//         <label htmlFor="email">Email Address: </label>
+//         <input type="email" name="email" defaultValue={ email } onBlur={ handleChange } />
+//     </div>
+//     <div>
+//         <label htmlFor="message">Message: </label>
+//         <textarea name="message" rows="5" defaultValue={ message } onBlur={ handleChange } />
+//     </div>
+//     { errorMessage && (
+//         <div>
+//             <p className=" error-text">{ errorMessage }</p>
+//         </div>
+//     ) }
+//     <button type="submit">submit</button>
+// </form>
