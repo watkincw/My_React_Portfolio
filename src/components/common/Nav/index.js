@@ -12,7 +12,9 @@ function Nav() {
 
     return (
         <div className="my-header">
-            <Header></Header>
+            <div style={{ backgroundColor: "Blue" }} >
+                <Header />
+            </div>
             <div className="my-nav-ul">
                 <CHeaderNav>
                         <CNavItem className="my-nav-li-link">
