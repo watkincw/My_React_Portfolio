@@ -18,7 +18,7 @@ function Nav() {
             <div className="my-nav-ul">
                 <CHeaderNav>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/My_React_Portfolio/" active>
+                                <CNavLink href="/" active>
                                     About Me
                                 </CNavLink>
                         </CNavItem>
