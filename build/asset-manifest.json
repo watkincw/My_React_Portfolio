@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/My_React_Portfolio/static/css/main.a6e3defc.chunk.css",
+    "main.js": "/My_React_Portfolio/static/js/main.420fa8c1.chunk.js",
+    "main.js.map": "/My_React_Portfolio/static/js/main.420fa8c1.chunk.js.map",
+    "runtime-main.js": "/My_React_Portfolio/static/js/runtime-main.384331a2.js",
+    "runtime-main.js.map": "/My_React_Portfolio/static/js/runtime-main.384331a2.js.map",
+    "static/css/2.0e92192e.chunk.css": "/My_React_Portfolio/static/css/2.0e92192e.chunk.css",
+    "static/js/2.3bb721eb.chunk.js": "/My_React_Portfolio/static/js/2.3bb721eb.chunk.js",
+    "static/js/2.3bb721eb.chunk.js.map": "/My_React_Portfolio/static/js/2.3bb721eb.chunk.js.map",
+    "index.html": "/My_React_Portfolio/index.html",
+    "static/css/2.0e92192e.chunk.css.map": "/My_React_Portfolio/static/css/2.0e92192e.chunk.css.map",
+    "static/css/main.a6e3defc.chunk.css.map": "/My_React_Portfolio/static/css/main.a6e3defc.chunk.css.map",
+    "static/js/2.3bb721eb.chunk.js.LICENSE.txt": "/My_React_Portfolio/static/js/2.3bb721eb.chunk.js.LICENSE.txt",
+    "static/media/BookTracker.jpg": "/My_React_Portfolio/static/media/BookTracker.c693ac2a.jpg",
+    "static/media/BudgetTracker.jpg": "/My_React_Portfolio/static/media/BudgetTracker.a42b375d.jpg",
+    "static/media/MovieRecommender.jpg": "/My_React_Portfolio/static/media/MovieRecommender.8e9b470e.jpg",
+    "static/media/RegexTutorial.jpg": "/My_React_Portfolio/static/media/RegexTutorial.cb54f737.jpg",
+    "static/media/TeamProfileGenerator.jpg": "/My_React_Portfolio/static/media/TeamProfileGenerator.cbf0badf.jpg",
+    "static/media/me.7c97fe06.jpg": "/My_React_Portfolio/static/media/me.7c97fe06.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.384331a2.js",
+    "static/css/2.0e92192e.chunk.css",
+    "static/js/2.3bb721eb.chunk.js",
+    "static/css/main.a6e3defc.chunk.css",
+    "static/js/main.420fa8c1.chunk.js"
+  ]
+}
