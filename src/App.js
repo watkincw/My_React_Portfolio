@@ -19,19 +19,19 @@ function App() {
                 <div>
                     <Switch>
                         <Route
-                            exact path="/"
+                            exact path="/My_React_Portfolio/"
                             component={ AboutMe }
                         ></Route>
                         <Route
-                            exact path="/portfolio"
+                            exact path="/My_React_Portfolio/portfolio"
                             component={ Portfolio }
                         ></Route>
                         <Route
-                            exact path="/contact"
+                            exact path="/My_React_Portfolio/contact"
                             component={ ContactForm }
                         ></Route>
                         <Route
-                            exact path="/resume"
+                            exact path="/My_React_Portfolio/resume"
                             component={ Resume }
                         ></Route>
                         <Route
