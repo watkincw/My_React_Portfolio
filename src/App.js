@@ -36,7 +36,7 @@ function App() {
                         ></Route>
                         <Route
                             // no "EXACT path" because this will link you to the home page when the user tries to direct to a URL that doesnt exist
-                            path="/My_React_Portfolio/"
+                            path="*"
                             component={ AboutMe }
                         ></Route>
                     </Switch>

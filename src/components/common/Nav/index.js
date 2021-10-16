@@ -16,22 +16,22 @@ function Nav() {
             <div className="my-nav-ul">
                 <CHeaderNav>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/" active>
+                                <CNavLink href="/My_React_Portfolio" active>
                                     About Me
                                 </CNavLink>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/portfolio" active>
+                                <CNavLink href="/My_React_Portfolio/portfolio" active>
                                     Portfolio
                                 </CNavLink>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/contact" active>
+                                <CNavLink href="/My_React_Portfolio/contact" active>
                                     Contact Me
                                 </CNavLink>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/resume" active>
+                                <CNavLink href="/My_React_Portfolio/resume" active>
                                     Resume
                                 </CNavLink>
                         </CNavItem>
