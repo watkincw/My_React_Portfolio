@@ -37,7 +37,7 @@ function App() {
                         <Route
                             // no "EXACT path" because this will link you to the home page when the user tries to direct to a URL that doesnt exist
                             path="*"
-                            component={ AboutMe }
+                            component={ <p>About Me</p> }
                         ></Route>
                     </Switch>
                 </div>

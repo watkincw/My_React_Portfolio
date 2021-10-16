@@ -23,7 +23,7 @@ function Nav() {
                                 </CNavLink>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/My_React_Portfolio/portfolio" active>
+                                <CNavLink href="/My_React_Portfolio/My_React_Portfolio/portfolio" active>
                                     Portfolio
                                 </CNavLink>
                         </CNavItem>
