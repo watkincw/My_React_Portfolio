@@ -23,15 +23,15 @@ function App() {
                             component={ AboutMe }
                         ></Route>
                         <Route
-                            exact path="/My_React_Portfolio/portfolio"
+                            exact path="/portfolio"
                             component={ Portfolio }
                         ></Route>
                         <Route
-                            exact path="/My_React_Portfolio/contact"
+                            exact path="/contact"
                             component={ ContactForm }
                         ></Route>
                         <Route
-                            exact path="/My_React_Portfolio/resume"
+                            exact path="/resume"
                             component={ Resume }
                         ></Route>
                         <Route
