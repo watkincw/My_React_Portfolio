@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Switch, HashRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import { HashRouter, HashRouter as Switch, Route } from "react-router-dom";
 // import { HashRouter } from "react-router-dom";
 import Nav from "./components/common/Nav";
@@ -15,13 +15,13 @@ import '@coreui/coreui/dist/css/coreui.min.css';
 
 function App() {
     return (
-        <HashRouter>
+        <Router>
             <Nav />
             <main className="body">
                 <div>
                     <Switch>
                         <Route
-                            exact path="/"
+                            exact path="/My_React_Portfolio"
                             component={ AboutMe }
                         ></Route>
                         <Route
@@ -38,14 +38,14 @@ function App() {
                         ></Route>
                         <Route
                             // no "EXACT path" because this will link you to the home page when the user tries to direct to a URL that doesnt exist
-                            path="/*"
+                            path="*"
                             component={ AboutMe }
                         ></Route>
                     </Switch>
                 </div>
             </main>
             <Footer />
-        </HashRouter>
+        </Router>
     );
 }
 
