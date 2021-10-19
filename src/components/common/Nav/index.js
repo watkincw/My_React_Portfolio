@@ -4,9 +4,9 @@ import Header from '../Header';
 import "../../../App.css";
 import {
     CNavItem,
-    CHeaderNav,
-    CNavLink
+    CHeaderNav
 } from '@coreui/react';
+import { Link } from "react-router-dom";
 
 function Nav() {
 
@@ -18,24 +18,24 @@ function Nav() {
             <div className="my-nav-ul">
                 <CHeaderNav>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/My_React_Portfolio" active>
+                                <Link to="/" active>
                                     About Me
-                                </CNavLink>
+                                </Link>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/portfolio" active>
+                                <Link to="/portfolio" active>
                                     Portfolio
-                                </CNavLink>
+                                </Link>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/contact" active>
+                                <Link to="/contact" active>
                                     Contact Me
-                                </CNavLink>
+                                </Link>
                         </CNavItem>
                         <CNavItem className="my-nav-li-link">
-                                <CNavLink href="/resume" active>
+                                <Link to="/resume" active>
                                     Resume
-                                </CNavLink>
+                                </Link>
                         </CNavItem>
                 </CHeaderNav>
             </div>

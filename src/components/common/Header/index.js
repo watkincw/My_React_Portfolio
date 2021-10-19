@@ -13,7 +13,7 @@ function Header() {
         <div className="my-logo">
             <CHeader>
                 <CContainer fluid>
-                    <CHeaderBrand href="/">CWW</CHeaderBrand>
+                    <CHeaderBrand>CWW</CHeaderBrand>
                     <CHeaderToggler onClick={() => setVisible(!visible)} />
                     <CCollapse visible={visible} />
                 </CContainer>
