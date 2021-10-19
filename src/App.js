@@ -15,7 +15,7 @@ import '@coreui/coreui/dist/css/coreui.min.css';
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Nav />
             <main className="body">
                 <div>
