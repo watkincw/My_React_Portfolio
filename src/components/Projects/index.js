@@ -52,6 +52,35 @@ function Projects() {
                 </CAccordionItem>
                 <CAccordionItem itemKey={2} className="what-I-do">
                     <CAccordionHeader>
+                        <CCardTitle>Lovely Librarian</CCardTitle>
+                    </CAccordionHeader>
+                    <div className="whatIveDone">
+                        <CAccordionBody>
+                            <div className="center-img">
+                                <CImage 
+                                    src={ require(`../../assets/projectImages/LL-Thumbnail.png`).default }
+                                    alt="Lovely Librarian"
+                                    className="img-thumbnail mx-1"
+                                    key="Lovely Librarian"
+                                />
+                            </div>
+                            <CCardText>
+                                <h5 className="flex-row">
+                                    Lovely Librarian is a responsive PWA that is used by librarians for internal library tasks. It is a MERN SPA that follows mobile-first practices.
+                                </h5>
+                            </CCardText>
+
+                            <div className="GHBtn">
+                                <CButton target="_blank" href="https://github.com/bcassellius/lovely-librarian">GitHub Repo</CButton>
+                            </div>
+                            <div className="GHBtn">
+                                <CButton target="_blank" href="https://lovely-librarian.herokuapp.com/">Deployed App</CButton>
+                            </div>
+                        </CAccordionBody>
+                    </div>
+                </CAccordionItem>
+                <CAccordionItem itemKey={3} className="what-I-do">
+                    <CAccordionHeader>
                         <CCardTitle>Social Network API(NoSQL)</CCardTitle>
                     </CAccordionHeader>
                     <div className="whatIveDone">
@@ -74,32 +103,6 @@ function Projects() {
 
                             <div className="GHBtn">
                                 <CButton target="_blank" href="https://github.com/watkincw/Social-Network-API">GitHub Repo</CButton>
-                            </div>
-                        </CAccordionBody>
-                    </div>
-                </CAccordionItem>                
-                <CAccordionItem itemKey={3} className="what-I-do">
-                    <CAccordionHeader>
-                        <CCardTitle>Team Profile Generator</CCardTitle>
-                    </CAccordionHeader>
-                    <div className="whatIveDone">
-                        <CAccordionBody>
-                            <div className="center-img">
-                                <CImage 
-                                    src={ require(`../../assets/projectImages/TeamProfileGenerator.jpg`).default }
-                                    alt="Team Profile Generator"
-                                    className="img-thumbnail mx-1"
-                                    key="Team Profile Generator"
-                                />
-                            </div>
-                            <CCardText>
-                                <h5 className="flex-row">
-                                    Scaling your business? Need to keep track of employees better? Simple use this Team Profile Generator! Add each of the employees on your team one by one to have them all in a database with their job roles and other important inforamtion.
-                                </h5>
-                            </CCardText>
-
-                            <div className="GHBtn">
-                                <CButton target="_blank" href="https://github.com/watkincw/team-profile-generator">GitHub Repo</CButton>
                             </div>
                         </CAccordionBody>
                     </div>
